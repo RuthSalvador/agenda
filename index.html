@@ -2,20 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Ejercicio Links</title>
+    <title>Ejercicio Agenda</title>
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <h1>Almacenando mis links</h1>
     <section>
-      <div>
-        <textarea type="text" name="insert-links" id="insert-links" placeholder="Agrega tu link"></textarea>
+      <h1>Almacenando mis links</h1>
+      <form>
+        <div class="input-wrapper">
+          <label for="name">Nombre</label>
+          <input type="text" name="name" id="name" placeholder="Agrega un nombre">
+        </div>
+        <div class="input-wrapper">
+          <label for="cellphone">Celular</label>
+          <input type="tel" name="cellphone" id="cellphone" placeholder="Agrega un celular">
+        </div>
         <button id="save" class="btn">Guardar</button>
-      </div>
+      </form>
       <div>
-        <h3>Mis links de apoyo</h3>
-        <ul id="container-links">
-
+        <h3>Mis contactos</h3>
+        <ul id="container-contact">
+          <li>
+            <span class="contact-name">Lucía</span>
+            <span class="contact-cellphone">555555555</span>
+          </li>
+          <li>
+              <span class="contact-name">Lucía</span>
+              <span class="contact-cellphone">555555555</span>
+            </li>
         </ul>
       </div>
     </section>
