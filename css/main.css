@@ -2,20 +2,66 @@
   font-family: sans-serif;
 }
 
+section {
+  padding: 15px;
+}
+
+h1, h3 {
+  margin: 0 0 30px;
+}
+
+h1::after, h3::after {
+  content: '';
+  display: block;
+  border-bottom: 4px solid #ce99ff;
+  height: 4px;
+  width: 300px;
+}
+
+form {
+  margin: 30px 20px 50px;
+}
+
+.input-wrapper {
+  display: inline-block;
+  width: 30%;
+}
+
+label {
+  color: #b84dff;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 15px;
+}
+
+input {
+  border: 2px solid #e6e6e6;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+}
+
 .btn {
-  background-color: #0D47A1;
+  background-color: #9900ff;
   border: none;
   border-radius: 5px;
   color: #ffffff;
-  display: block;
+  display: inline-block;
   outline: none;
-  padding: 7px;
+  padding: 7px 15px;
 }
 
-/*la etiqueta textarea viene con row y col para definir alto y
-ancho(cantidad de columnas y filas), sin embargo es mejor definirlo
-en CSS porque son estilos*/
-textarea {
-  height: 50px;
-  width: 200px;
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  background-color: #f3e6ff;
+  border-radius: 5px;
+  margin: 5px 0;
+  padding: 15px 20px;
+  width: 300px;
 }
